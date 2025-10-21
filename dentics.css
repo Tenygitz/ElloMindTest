@@ -600,6 +600,13 @@ button {
     var(--color-border-light) 100%
   );
 }
+@media (max-width: 480px){
+    .label-lin {
+  width: 90%;
+  
+  
+}
+}
 .label-lines {
     width:170%;
     height: 1px;
@@ -1414,12 +1421,14 @@ button {
     grid-template-columns: 1fr 1fr !important;
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-xl);
+} .footer-column:nth-child(2n) {
+        padding: 20px;
+        /* OR specific sides */
+        padding-left: 20px;
+        padding-top: 50px; /* Your margin-top can be padding-top */
+    }
 }
-}
-@media (max-width: 480px) {
-.footer-content > :nth-child(2) {
-  margin-top: 50px;
-}}
+
 
 .footer-column {
     display: flex;
